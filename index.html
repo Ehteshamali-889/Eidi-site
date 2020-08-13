@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        header{
+            background:black;
+        }
+       
+        .head1 > a{
+            display: inline-block;
+            background: black;
+            text-decoration: none;
+            color:white;
+            padding:15px;
+            margin-right:0;
+            
+        }
+        .start{
+            display: flex;
+        }
+        .main1{
+            background: #ccc;
+            flex:6;
+            padding-top:30px;
+            padding-left:30px;
+        }
+        #text{
+            font-size: 25px;
+            line-height: 1.5;   
+        }
+        #name{
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .main2{
+            flex:1;
+            background: #ccc;
+            padding-right:25px;
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+        span{
+            font-size: 20px;
+            margin-left:12px;
+            color:white;
+            margin-right:12px;
+        }
+        #second{
+            display: flex;
+        }
+        #eidhi{
+            border-radius: 20px;
+        }
+        footer{
+            background: black;
+            padding-top:20px;
+            padding-left:20px;
+            text-align: center;
+        }
+        footer > p{
+            margin-bottom: 10px;
+            color:white;
+            font-weight: bold;
+        }
+        footer > button{
+            border: none;
+            outline: none;
+            border-radius:5px;
+            padding:10px 15px;
+            margin-bottom: 5px;
+        }
+        button:hover{
+            background-color: teal;
+            color:white
+        }
+        .achievement{
+            text-align: center;
+            width:500px;
+            background-color:#f1f1f1;
+            padding:25px;
+            font-size: 25px;
+        }
+        a:hover{
+            background-color:red;
+        }
+        @media(max-width: 600px){
+            .head1{
+                width:100%;
+            }
+            .start{
+                flex-direction: column;
+            }
+            #second{
+                flex-direction: column;
+            }
+            .achievement{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head1">
+            <span>Site</span>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </header>
+    <section class="start" id="home">
+        <article class="main1">
+            <h1 id="name">Abdul Sattar Edhi</h1>
+            <p id="text">He was a Pakistani philanthropist, ascetic,<br>and humanitarian who founded the Edhi Foundation.</p>
+        </article>
+        <article class="main2">
+            <img src="eidhi1.jpg" alt="" width="300px" height="300px" id="eidhi">
+        </article>
+    </section>
+    <section class="middle">
+        <article id="second">
+            <p class="achievement" id="about">Abdul Sattar Edhi was born in 1928 in a small village of Bantva near Joona Garh, Gujrat (India).</p>
+            <p class="achievement">He established world's largest volunteer ambulance network</p>
+            <p class="achievement">He established Edhi Foundation which can provide education,children,hospital and many other services.</p>
+        </article>
+    </section>
+    <footer>
+            <p id="contact">Contact Us</p>
+            <input type="text" placeholder="Enter Name">
+            <br>
+            <br>
+            <input type="email" placeholder="Your Email">
+            <br>
+            <br>
+            <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+            <br>
+            <br>
+            <button>Submit</button>
+            <br>
+            <span>&copy;Ehtesham Ali 2020</span>
+    </footer>
+</body>
+</html>
